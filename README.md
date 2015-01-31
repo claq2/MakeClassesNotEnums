@@ -1,0 +1,1 @@
+Demo app about using classes instead of enums.
