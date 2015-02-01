@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Job.cs" />
+    <Compile Include="JobService.cs" />
     <Compile Include="JobType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

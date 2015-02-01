@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace ClassesBusinessLayer
 {
-    public class FileJob : Job
+    public class FileJobService
     {
-        public string Path { get; set; }
-
-        public string Filter { get; set; }
-
-        public FileJob()
+        public FileJob GetJob(int id)
         {
-
+            return new FileJob { Id = id, Filter = "*.*", Path = "C:\\Temp" };
         }
     }
 }

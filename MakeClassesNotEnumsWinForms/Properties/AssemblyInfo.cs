@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MakeClassesNotEnums")]
+[assembly: AssemblyTitle("MakeClassesNotEnumsWinForms")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MakeClassesNotEnums")]
+[assembly: AssemblyProduct("MakeClassesNotEnumsWinForms")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c4d27a84-25cc-4f2b-b464-a9c408870459")]
+[assembly: Guid("1c6c4626-e742-4d68-8802-461486aa5a08")]
 
 // Version information for an assembly consists of the following four values:
 //
