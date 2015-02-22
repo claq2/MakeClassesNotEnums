@@ -10,5 +10,6 @@ namespace EnumsBusinessLayer
     {
         FileJob,
         SqlJob,
+        Sql2014Job,
     }
 }

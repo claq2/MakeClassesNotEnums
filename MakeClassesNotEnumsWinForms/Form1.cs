@@ -20,7 +20,7 @@ namespace MakeClassesNotEnumsWinForms
         private void sqlJobEnumButton_Click(object sender, EventArgs e)
         {
             var jobService = new EnumsBusinessLayer.JobService();
-            var job = jobService.GetJob(42, EnumsBusinessLayer.JobType.SqlJob);
+            var job = jobService.GetJob(42, EnumsBusinessLayer.JobType.SqlJob, null, null, "AdventureWorks", "Default", "sa", "Passw0rd");
         }
 
         private void fileJobEnumButton_Click(object sender, EventArgs e)

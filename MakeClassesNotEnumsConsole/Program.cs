@@ -25,12 +25,12 @@ namespace MakeClassesNotEnumsConsole
                 if (jobType == 1)
                 {
                     // File
-                    var job = jobService.GetJob(42, EnumsBusinessLayer.JobType.FileJob);
+                    var job = jobService.GetJob(42, EnumsBusinessLayer.JobType.FileJob, "*.*", "C:\\Temp", null, null, null, null);
                     Console.WriteLine("Enum file job - filter = {0}, path = {1}", job.Filter, job.Path);
                 }
                 else if (jobType == 2)
                 {
-                    var job = jobService.GetJob(42, EnumsBusinessLayer.JobType.SqlJob);
+                    var job = jobService.GetJob(42, EnumsBusinessLayer.JobType.SqlJob, null, null, "AdventureWorks", "Default", "sa", "Passw0rd");
                     Console.WriteLine("Enum SQL job - database = {0}, instance = {1}, username = {2}", job.Database, job.Instance, job.Username);
                 }
             }
