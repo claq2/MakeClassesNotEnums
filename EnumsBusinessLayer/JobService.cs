@@ -8,7 +8,7 @@ namespace EnumsBusinessLayer
 {
     public class JobService
     {
-        public Job GetJob(int id, JobType type, string filter, string path, string database, string instance, string username, string password)
+        public Job CreateJob(int id, JobType type, string filter, string path, string database, string instance, string username, string password)
         {
             switch (type)
             {
@@ -26,6 +26,7 @@ namespace EnumsBusinessLayer
                     {
                         newJob.Instance += "2014";
                     }
+
                     return newJob;
                 default:
                     throw new ArgumentException("Unknown type " + type);

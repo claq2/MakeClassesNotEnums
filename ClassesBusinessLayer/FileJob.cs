@@ -12,9 +12,16 @@ namespace ClassesBusinessLayer
 
         public string Filter { get; set; }
 
-        public FileJob()
+        public FileJob(int id, string filter, string path)
+            : base(id)
         {
+            if (!System.IO.Path.IsPathRooted(path))
+            {
+                throw new ArgumentException("Must be non-relative", "path");
+            }
 
+            this.Filter = filter;
+            this.Path = path;
         }
     }
 }

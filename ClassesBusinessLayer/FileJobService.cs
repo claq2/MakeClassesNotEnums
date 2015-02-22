@@ -8,9 +8,9 @@ namespace ClassesBusinessLayer
 {
     public class FileJobService
     {
-        public FileJob GetJob(int id)
+        public FileJob CreateJob(int id)
         {
-            return new FileJob { Id = id, Filter = "*.*", Path = "C:\\Temp" };
+            return new FileJob(id, "*.*", "C:\\Temp");
         }
     }
 }
