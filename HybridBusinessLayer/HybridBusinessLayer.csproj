@@ -39,8 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AbstractJob.cs" />
+    <Compile Include="FileJob.cs" />
+    <Compile Include="FileJobService.cs" />
+    <Compile Include="Job.cs" />
+    <Compile Include="JobService.cs" />
+    <Compile Include="JobType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sql2014Job.cs" />
+    <Compile Include="Sql2014JobService.cs" />
+    <Compile Include="SqlJob.cs" />
+    <Compile Include="SqlJobService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
