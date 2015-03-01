@@ -8,9 +8,9 @@ namespace ClassesBusinessLayer
 {
     public class SqlJobService
     {
-        public SqlJob CreateJob(int id)
+        public SqlJob CreateJob(int id, string instance, string database, string username, string password)
         {
-            return new SqlJob(id, "MSSQLSERVER", "AdventureWorks", "sa", "Passw0rd");
+            return new SqlJob(id, instance, database, username, password);
         }
     }
 }

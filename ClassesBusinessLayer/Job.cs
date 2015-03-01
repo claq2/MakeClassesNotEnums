@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ClassesBusinessLayer
 {
-    public abstract class Job
+    public abstract class AbstractJob
     {
         public int Id { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Job"/> class.
+        /// Initializes a new instance of the <see cref="AbstractJob"/> class.
         /// </summary>
         /// <param name="id"></param>
-        protected Job(int id)
+        protected AbstractJob(int id)
         {
             Id = id;
         }

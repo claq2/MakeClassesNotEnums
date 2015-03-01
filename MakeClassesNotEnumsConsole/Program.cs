@@ -41,14 +41,14 @@ namespace MakeClassesNotEnumsConsole
                 {
                     // File
                     var jobService = new ClassesBusinessLayer.FileJobService();
-                    var job = jobService.CreateJob(42);
+                    var job = jobService.CreateJob(42, "*.*", "C:\\Temp");
                     Console.WriteLine("Enum file job - filter = {0}, path = {1}", job.Filter, job.Path);
                 }
                 else if (jobType == 2)
                 {
                     // SQL
                     var jobService = new ClassesBusinessLayer.SqlJobService();
-                    var job = jobService.CreateJob(42);
+                    var job = jobService.CreateJob(42, "AdventureWorks", "Default", "sa", "Passw0rd");
                     Console.WriteLine("Enum SQL job - database = {0}, instance = {1}, username = {2}", job.Database, job.Instance, job.Username);
                 }
             }

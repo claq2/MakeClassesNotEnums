@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassesBusinessLayer
 {
-    public class SqlJob : Job
+    public class SqlJob : AbstractJob
     {
         public string Instance { get; set; }
 

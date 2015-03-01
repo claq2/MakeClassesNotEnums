@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassesBusinessLayer
 {
-    public class FileJob : Job
+    public class FileJob : AbstractJob
     {
         public string Path { get; set; }
 

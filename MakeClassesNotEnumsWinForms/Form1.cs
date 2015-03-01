@@ -26,19 +26,19 @@ namespace MakeClassesNotEnumsWinForms
         private void fileJobEnumButton_Click(object sender, EventArgs e)
         {
             var jobService = new EnumsBusinessLayer.JobService();
-
+            var job = jobService.CreateJob(42, EnumsBusinessLayer.JobType.FileJob, "*.*", "C:\\Temp", null, null, null, null);
         }
 
         private void sqlJobClassButton_Click(object sender, EventArgs e)
         {
             var jobService = new ClassesBusinessLayer.SqlJobService();
-
+            var job = jobService.CreateJob(42, "AdventureWorks", "Default", "sa", "Passw0rd");
         }
 
         private void fileJobClassEnum_Click(object sender, EventArgs e)
         {
             var jobService = new ClassesBusinessLayer.FileJobService();
-
+            var job = jobService.CreateJob(42, "*.*", "C:\\Temp");
         }
     }
 }
