@@ -8,9 +8,6 @@ namespace HybridBusinessLayer
     {
         public Job CreateJob(int id, JobType type, string filter, string path, string database, string instance, string username, string password)
         {
-            // Create factory instance
-            // Call appropriate factory method
-            // Return result of ToJob method
             switch (type)
             {
                 case JobType.FileJob:

@@ -31,7 +31,7 @@ namespace HybridBusinessLayer
             this.Password = password;
         }
 
-        public Job ToJob()
+        public override Job ToJob()
         {
             return new Job { Id = this.Id, Database = this.Database, Instance = this.Instance, Password = this.Password, Username = this.Username };
         }

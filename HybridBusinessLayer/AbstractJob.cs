@@ -12,5 +12,7 @@ namespace HybridBusinessLayer
         {
             this.Id = id;
         }
+
+        public abstract Job ToJob();
     }
 }

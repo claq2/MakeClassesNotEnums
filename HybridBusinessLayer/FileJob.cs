@@ -22,7 +22,7 @@ namespace HybridBusinessLayer
             this.Path = path;
         }
 
-        public Job ToJob()
+        public override Job ToJob()
         {
             return new Job { Filter = this.Filter, JobType = JobType.FileJob, Path = this.Path, Id = this.Id };
         }
